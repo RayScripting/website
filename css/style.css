@@ -42,6 +42,13 @@ nav {
   letter-spacing: 0.04em;
   position: relative;
   z-index: 201;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-logo-img {
+  height: 36px;
+  width: auto;
 }
 
 .nav-right {
@@ -235,16 +242,23 @@ nav {
 }
 .about-text p { color: var(--mid); margin-bottom: 1rem; font-size: 0.96rem; }
 
-.about-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about-logo img {
-  width: 80%;
-  max-width: 320px;
+.about-photo { position: relative; }
+.about-photo img {
+  width: 100%;
   height: auto;
-  filter: drop-shadow(0 8px 24px rgba(26,43,32,0.12));
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+  box-shadow: 0 20px 60px rgba(26,43,32,0.12);
+  display: block; position: relative; z-index: 1;
+}
+.about-photo::before {
+  content: '';
+  position: absolute;
+  top: -16px; left: -16px; right: 16px; bottom: 16px;
+  border: 2px solid var(--sand);
+  border-radius: 4px; z-index: 0;
 }
 
 /* ══ SERVICES ══ */

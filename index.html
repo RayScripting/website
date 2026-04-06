@@ -7,13 +7,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">Gabriele Tausch</div>
+  <div class="nav-logo">
+    <img src="images/logo.png" alt="Logo" class="nav-logo-img" />
+    Gabriele Tausch
+  </div>
   <div class="nav-right">
     <ul class="nav-links">
       <li><a href="#ueber-mich" data-nav="about">Über mich</a></li>
@@ -56,13 +60,13 @@
     </p>
     <h1 class="hero-title">
       <span data-t="de" class="active">Persönliche Unterstützung,<br><em>die wirklich hilft.</em></span>
-      <span data-t="ro">Sprijin personal,<br><em>care chiar ajută.</em></span>
+      <span data-t="ro">Sprijin personal eficient și de succes</span>
       <span data-t="en">Personal support,<br><em>that truly helps.</em></span>
       <span data-t="hu">Személyes segítség,<br><em>ami tényleg számít.</em></span>
     </h1>
     <p class="hero-sub">
       <span data-t="de" class="active">Formulare, Briefe, Anträge – ich begleite Sie durch den Papierkram, kompetent, diskret und auf Augenhöhe.</span>
-      <span data-t="ro">Formulare, scrisori, cereri – vă însoțesc prin hârtii, competent, discret și la același nivel.</span>
+      <span data-t="ro">Formulare, scrisori, cereri – vă însoțesc competent, cu discreție și la cel mai înalt nivel.</span>
       <span data-t="en">Forms, letters, applications – I guide you through the paperwork, competently, discreetly, and eye to eye.</span>
       <span data-t="hu">Nyomtatványok, levelek, kérelmek – segítek az ügyintézésben, hozzáértően, diszkréten és egyenrangúan.</span>
     </p>
@@ -129,8 +133,11 @@
       <span data-t="hu">Több mint 10 éves tapasztalat szociális migrációs projektekben – folyékonyan beszélek németül, románul, magyarul és angolul.</span>
     </p>
   </div>
-  <div class="about-logo">
-    <img src="images/logo.png" alt="Gabriele Tausch Logo" />
+  <div class="about-photo">
+    <!-- Bitte portrait.jpg in den images/ Ordner kopieren -->
+    <img src="images/portrait.jpg"
+         alt="Gabriele Tausch – Portrait"
+         onerror="this.style.height='420px';this.style.background='linear-gradient(135deg,#cfdecf,#4e806044)';this.removeAttribute('src')" />
   </div>
 </section>
 
@@ -262,7 +269,7 @@
       <span data-t="hu">Kapcsolat</span>
     </p>
     <h2>
-      <span data-t="de" class="active">Einfach melden –<br>ich bin für Sie da.</span>
+      <span data-t="de" class="active">Einfach melden.<br>Ich bin für Sie da!</span>
       <span data-t="ro">Scrieți-mi oricând –<br>sunt aici pentru dumneavoastră.</span>
       <span data-t="en">Just reach out –<br>I'm here.</span>
       <span data-t="hu">Csak írjon –<br>itt vagyok.</span>
