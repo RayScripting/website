@@ -237,7 +237,12 @@ nav {
 
 .about-photo { position: relative; }
 .about-photo img {
-  width: 100%; border-radius: 4px;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
   box-shadow: 0 20px 60px rgba(26,43,32,0.12);
   display: block; position: relative; z-index: 1;
 }
