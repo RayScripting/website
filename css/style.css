@@ -237,19 +237,20 @@ nav {
 
 .about-photo { position: relative; }
 .about-photo img {
-  width: 100%;
+  width: 80%;
   height: auto;
-  max-height: 520px;
+  max-height: 400px;
   object-fit: cover;
   object-position: center top;
   border-radius: 4px;
   box-shadow: 0 20px 60px rgba(26,43,32,0.12);
   display: block; position: relative; z-index: 1;
+  margin: 0 auto;
 }
 .about-photo::before {
   content: '';
   position: absolute;
-  top: -16px; left: -16px; right: 16px; bottom: 16px;
+  top: -16px; left: 4%; right: 24%;bottom: 16px;
   border: 2px solid var(--sand);
   border-radius: 4px; z-index: 0;
 }
