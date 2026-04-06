@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriele Tausch – Büroservice & Übersetzungen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Gabriele Tausch</div>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#ueber-mich" data-nav="about">Über mich</a></li>
+      <li><a href="#leistungen" data-nav="services">Womit ich helfe</a></li>
+      <li><a href="#kontakt"    data-nav="contact">Kontakt</a></li>
+    </ul>
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="de">DE</button>
+      <button class="lang-btn" data-lang="ro">RO</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="hu">HU</button>
+    </div>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#ueber-mich" data-nav="about"   onclick="closeMenu()">Über mich</a>
+  <a href="#leistungen" data-nav="services" onclick="closeMenu()">Womit ich helfe</a>
+  <a href="#kontakt"    data-nav="contact"  onclick="closeMenu()">Kontakt</a>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="de">DE</button>
+    <button class="lang-btn" data-lang="ro">RO</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="hu">HU</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-eyebrow">
+      <span data-t="de" class="active">Büroservice · Übersetzungen · Nachhilfe</span>
+      <span data-t="ro">Servicii birou · Traduceri · Meditații</span>
+      <span data-t="en">Office Support · Translations · Tutoring</span>
+      <span data-t="hu">Irodai segítség · Fordítás · Korrepetálás</span>
+    </p>
+    <h1 class="hero-title">
+      <span data-t="de" class="active">Persönliche Unterstützung,<br><em>die wirklich hilft.</em></span>
+      <span data-t="ro">Sprijin personal,<br><em>care chiar ajută.</em></span>
+      <span data-t="en">Personal support,<br><em>that truly helps.</em></span>
+      <span data-t="hu">Személyes segítség,<br><em>ami tényleg számít.</em></span>
+    </h1>
+    <p class="hero-sub">
+      <span data-t="de" class="active">Formulare, Briefe, Anträge – ich begleite Sie durch den Papierkram, kompetent, diskret und auf Augenhöhe.</span>
+      <span data-t="ro">Formulare, scrisori, cereri – vă însoțesc prin hârtii, competent, discret și la același nivel.</span>
+      <span data-t="en">Forms, letters, applications – I guide you through the paperwork, competently, discreetly, and eye to eye.</span>
+      <span data-t="hu">Nyomtatványok, levelek, kérelmek – segítek az ügyintézésben, hozzáértően, diszkréten és egyenrangúan.</span>
+    </p>
+    <div class="lang-pills">
+      <span class="lang-pill">🇩🇪 Deutsch</span>
+      <span class="lang-pill">🇷🇴 Română</span>
+      <span class="lang-pill">🇭🇺 Magyar</span>
+      <span class="lang-pill">🇬🇧 English</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#kontakt" class="btn">
+        <span data-t="de" class="active">Melden Sie sich</span>
+        <span data-t="ro">Contactați-mă</span>
+        <span data-t="en">Get in touch</span>
+        <span data-t="hu">Írjon nekem</span>
+      </a>
+      <a href="#leistungen" class="btn btn-outline">
+        <span data-t="de" class="active">Womit ich helfe</span>
+        <span data-t="ro">Cum ajut</span>
+        <span data-t="en">How I help</span>
+        <span data-t="hu">Miben segítek</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <!-- Bitte foto.jpg in den images/ Ordner kopieren -->
+    <img src="images/foto.jpg"
+         alt="Gabriele Tausch"
+         onerror="this.style.background='linear-gradient(135deg,#cfdecf,#4e806066)';this.removeAttribute('src')" />
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="ueber-mich">
+  <div class="about-text">
+    <p class="section-eyebrow">
+      <span data-t="de" class="active">Über mich</span>
+      <span data-t="ro">Despre mine</span>
+      <span data-t="en">About me</span>
+      <span data-t="hu">Rólam</span>
+    </p>
+    <h2>
+      <span data-t="de" class="active">Erfahrung, die<br>ich gerne teile.</span>
+      <span data-t="ro">Experiență pe care<br>o împărtășesc cu drag.</span>
+      <span data-t="en">Experience I'm happy<br>to share with you.</span>
+      <span data-t="hu">Tapasztalat, amelyet<br>szívesen megosztok.</span>
+    </h2>
+    <p>
+      <span data-t="de" class="active">Ich begleite Menschen aus unterschiedlichen Kulturen – bei Anträgen, Formularen oder Behördengängen. Es ist mir wichtig, dass sich jeder Mensch gut aufgehoben fühlt und weiß, dass er nicht allein ist.</span>
+      <span data-t="ro">Însoțesc oameni din culturi diferite – la cereri, formulare sau drumuri la autorități. Îmi este important ca fiecare să se simtă în siguranță și să știe că nu este singur.</span>
+      <span data-t="en">I support people from different backgrounds – with applications, forms, or visits to authorities. It matters to me that everyone feels well looked after and knows they are not alone.</span>
+      <span data-t="hu">Különböző kultúrákból érkező embereket kísérlek – kérelmeknél, nyomtatványoknál vagy hatósági ügyintézésnél. Fontos számomra, hogy mindenki jól érezze magát és tudja, hogy nincs egyedül.</span>
+    </p>
+    <p>
+      <span data-t="de" class="active">Durch meine langjährige Tätigkeit in städtischen Projekten, meine Ausbildung zur Kauffrau für Büromanagement und meine Mehrsprachigkeit kann ich Menschen kompetent und empathisch begleiten.</span>
+      <span data-t="ro">Prin activitatea mea îndelungată în proiecte sociale urbane, pregătirea ca manager de birou și cunoștințele lingvistice, pot însoți oamenii competent și empatic.</span>
+      <span data-t="en">Through years of work in urban social projects, my office management training, and multilingual skills, I can support people with competence and empathy.</span>
+      <span data-t="hu">Évek óta dolgozom városi szociális projektekben, irodavezetési képesítéssel rendelkezem, és többnyelvű tudásommal hozzáértően és empatikusan tudok segíteni.</span>
+    </p>
+    <p>
+      <span data-t="de" class="active">Über 10 Jahre Erfahrung in sozialen Migrationsprojekten – Deutsch, Rumänisch, Ungarisch und Englisch fließend.</span>
+      <span data-t="ro">Peste 10 ani de experiență în proiecte sociale de migrație – germană, română, maghiară și engleză fluent.</span>
+      <span data-t="en">Over 10 years of experience in social migration projects – fluent in German, Romanian, Hungarian and English.</span>
+      <span data-t="hu">Több mint 10 éves tapasztalat szociális migrációs projektekben – folyékonyan beszélek németül, románul, magyarul és angolul.</span>
+    </p>
+  </div>
+  <div class="about-photo">
+    <!-- Bitte portrait.jpg in den images/ Ordner kopieren -->
+    <img src="images/portrait.jpg"
+         alt="Gabriele Tausch – Portrait"
+         onerror="this.style.height='380px';this.style.background='linear-gradient(135deg,#cfdecf,#4e806044)';this.removeAttribute('src')" />
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="leistungen">
+  <div class="section-header">
+    <p class="section-eyebrow">
+      <span data-t="de" class="active">Wie ich helfen kann</span>
+      <span data-t="ro">Cum pot ajuta</span>
+      <span data-t="en">How I can help</span>
+      <span data-t="hu">Hogyan tudok segíteni</span>
+    </p>
+    <h2 class="section-title">
+      <span data-t="de" class="active">Womit ich für Sie da bin</span>
+      <span data-t="ro">Ce fac pentru dumneavoastră</span>
+      <span data-t="en">What I'm here for</span>
+      <span data-t="hu">Miben vagyok itt Önnek</span>
+    </h2>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="service-icon">📋</div>
+      <h3>
+        <span data-t="de" class="active">Büro & Anträge</span>
+        <span data-t="ro">Birou & Cereri</span>
+        <span data-t="en">Office & Applications</span>
+        <span data-t="hu">Iroda & Kérelmek</span>
+      </h3>
+      <p>
+        <span data-t="de" class="active">Ich helfe beim Ausfüllen von Formularen, beim Verfassen von Briefen und beim Beantragen von Leistungen – Schritt für Schritt, in Ihrem Tempo.</span>
+        <span data-t="ro">Vă ajut să completați formulare, să scrieți scrisori și să depuneți cereri – pas cu pas, în ritmul dumneavoastră.</span>
+        <span data-t="en">I help fill out forms, write letters, and apply for benefits – step by step, at your pace.</span>
+        <span data-t="hu">Segítek nyomtatványok kitöltésében, levelek írásában és ellátások igénylésében – lépésről lépésre, az Ön tempójában.</span>
+      </p>
+      <div class="service-tags">
+        <span class="service-tag">Kindergeld</span>
+        <span class="service-tag">Wohngeld</span>
+        <span class="service-tag">Anträge</span>
+        <span class="service-tag">Briefe</span>
+        <span class="service-tag">Formulare</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🌐</div>
+      <h3>
+        <span data-t="de" class="active">Übersetzungen</span>
+        <span data-t="ro">Traduceri</span>
+        <span data-t="en">Translations</span>
+        <span data-t="hu">Fordítás</span>
+      </h3>
+      <p>
+        <span data-t="de" class="active">Sorgfältige Übersetzungen Deutsch ↔ Rumänisch in verschiedenen Fachbereichen – aus über 10 Jahren Erfahrung in sozialen Projekten.</span>
+        <span data-t="ro">Traduceri atente germană ↔ română în diverse domenii – din peste 10 ani de experiență în proiecte sociale.</span>
+        <span data-t="en">Careful translations German ↔ Romanian in various fields – from over 10 years in social projects.</span>
+        <span data-t="hu">Gondos fordítások német ↔ román nyelven – több mint 10 éves szociális tapasztalattal.</span>
+      </p>
+      <div class="service-tags">
+        <span class="service-tag">Deutsch ↔ Rumänisch</span>
+        <span class="service-tag">Zahnmedizin</span>
+        <span class="service-tag">Technik</span>
+        <span class="service-tag">Anatomie</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📝</div>
+      <h3>
+        <span data-t="de" class="active">Bewerbungsunterlagen</span>
+        <span data-t="ro">Dosare de candidatură</span>
+        <span data-t="en">Application documents</span>
+        <span data-t="hu">Állásjelentkezési anyagok</span>
+      </h3>
+      <p>
+        <span data-t="de" class="active">Ich helfe dabei, den eigenen Lebensweg so zu formulieren, dass er gehört wird – Lebenslauf, Anschreiben und mehr, ganz auf Ihre Geschichte zugeschnitten.</span>
+        <span data-t="ro">Vă ajut să vă formulați parcursul astfel încât să fie auzit – CV, scrisoare de intenție și mai mult, adaptate povestii dumneavoastră.</span>
+        <span data-t="en">I help you put your story into words so it gets heard – CV, cover letter and more, tailored to your journey.</span>
+        <span data-t="hu">Segítek megfogalmazni az Ön útját úgy, hogy meghallgassák – önéletrajz, motivációs levél és egyéb dokumentumok.</span>
+      </p>
+      <div class="service-tags">
+        <span class="service-tag">Lebenslauf</span>
+        <span class="service-tag">Anschreiben</span>
+        <span class="service-tag">Individuell</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📚</div>
+      <h3>
+        <span data-t="de" class="active">Nachhilfe & Deutsch</span>
+        <span data-t="ro">Meditații & Germană</span>
+        <span data-t="en">Tutoring & German</span>
+        <span data-t="hu">Korrepetálás & Német</span>
+      </h3>
+      <p>
+        <span data-t="de" class="active">Hausaufgabenbegleitung für Grundschulkinder auf Deutsch – mit Erklärungen auch auf Rumänisch. Und Deutschkurse für Erwachsene, die neu ankommen.</span>
+        <span data-t="ro">Ajutor la teme pentru copii de școală primară în germană – cu explicații și în română. Și cursuri de germană pentru adulți nou-veniți.</span>
+        <span data-t="en">Homework support for primary school children in German – with explanations in Romanian too. And German lessons for adults who have just arrived.</span>
+        <span data-t="hu">Házifeladat-segítség általános iskolásoknak németül – románul is magyarázva. És némettanfolyamok felnőtteknek.</span>
+      </p>
+      <div class="service-tags">
+        <span class="service-tag">Grundschule</span>
+        <span class="service-tag">Deutsch lernen</span>
+        <span class="service-tag">Integration</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NOTE -->
+<div class="note">
+  <p>
+    <span data-t="de" class="active"><strong>Zur Orientierung:</strong> Rechtliche Widersprüche, Steuerformulare, soziale Beratung sowie notariell beglaubigte Übersetzungen liegen außerhalb meines Angebots – dafür gibt es spezialisierte Stellen, an die ich gerne weiterverweise.</span>
+    <span data-t="ro"><strong>Ca orientare:</strong> Contestațiile juridice, formularele fiscale, consilierea socială și traducerile notariale nu fac parte din oferta mea – există instituții specializate la care pot îndruma cu plăcere.</span>
+    <span data-t="en"><strong>For orientation:</strong> Legal appeals, tax forms, social counselling and notarised translations are outside what I offer – there are specialist offices for these, and I'm happy to point you in the right direction.</span>
+    <span data-t="hu"><strong>Tájékoztatásképpen:</strong> Jogi kifogások, adóbevallások, szociális tanácsadás és közjegyző által hitelesített fordítások nem tartoznak a szolgáltatásaim közé.</span>
+  </p>
+</div>
+
+<!-- CONTACT -->
+<section class="contact" id="kontakt">
+  <div class="contact-inner">
+    <p class="section-eyebrow">
+      <span data-t="de" class="active">Kontakt</span>
+      <span data-t="ro">Contact</span>
+      <span data-t="en">Contact</span>
+      <span data-t="hu">Kapcsolat</span>
+    </p>
+    <h2>
+      <span data-t="de" class="active">Einfach melden –<br>ich bin da.</span>
+      <span data-t="ro">Scrieți-mi oricând –<br>sunt aici.</span>
+      <span data-t="en">Just reach out –<br>I'm here.</span>
+      <span data-t="hu">Csak írjon –<br>itt vagyok.</span>
+    </h2>
+    <p>
+      <span data-t="de" class="active">Fragen, Unsicherheiten oder der Wunsch nach einem persönlichen Gespräch – ich freue mich über jede Nachricht.</span>
+      <span data-t="ro">Întrebări, nesiguranțe sau dorința unui schimb personal – mă bucur de orice mesaj.</span>
+      <span data-t="en">Questions, uncertainties or just wanting a personal conversation – every message is welcome.</span>
+      <span data-t="hu">Kérdések, bizonytalanságok vagy személyes beszélgetés iránti igény – minden üzenetnek örülök.</span>
+    </p>
+    <a href="mailto:info@gabriele-tausch.org" class="contact-email">info@gabriele-tausch.org</a>
+    <br><br>
+    <a href="mailto:info@gabriele-tausch.org" class="btn">
+      <span data-t="de" class="active">E-Mail schreiben</span>
+      <span data-t="ro">Trimiteți un e-mail</span>
+      <span data-t="en">Send an e-mail</span>
+      <span data-t="hu">E-mail küldése</span>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Gabriele Tausch · Wuppertal</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
