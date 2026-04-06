@@ -247,13 +247,6 @@ nav {
   display: block; position: relative; z-index: 1;
   margin: 0 auto;
 }
-.about-photo::before {
-  content: '';
-  position: absolute;
-  top: -16px; left: 4%; right: 24%;bottom: 16px;
-  border: 2px solid var(--sand);
-  border-radius: 4px; z-index: 0;
-}
 
 /* ══ SERVICES ══ */
 .services { padding: 6rem 6%; }
@@ -372,8 +365,6 @@ footer {
   .hero-text { padding: 2.2rem 1.4rem 2.8rem; }
 
   .about { grid-template-columns: 1fr; gap: 2rem; padding: 3.5rem 1.4rem; }
-  .about-photo { padding: 16px 0 0 16px; }
-  .about-photo::before { top: 0; left: 0; right: 16px; bottom: -16px; }
 
   .services { padding: 3.5rem 1.4rem; }
   .contact  { padding: 3.5rem 1.4rem; }
