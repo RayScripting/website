@@ -186,6 +186,12 @@ nav {
   color: var(--mid);
   background: var(--cream);
 }
+.lang-pill { cursor: pointer; transition: all 0.18s; }
+.lang-pill.active {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
 
 .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
 
@@ -351,7 +357,7 @@ footer {
 
 /* ══ TRANSLATABLE ══ */
 [data-t] { display: none; }
-[data-t].active { display: inline; }
+[data-t].active { display: inherit; }
 
 /* ══ MOBILE ══ */
 @media (max-width: 768px) {

@@ -33,7 +33,14 @@ function setLang(lang) {
     el.textContent = navLabels[lang][el.dataset.nav];
   });
   document.documentElement.lang = lang;
+  document.querySelectorAll('.lang-pill').forEach(p => {
+  p.classList.toggle('active', p.dataset.lang === lang);
+});
 }
+
+document.querySelectorAll('.lang-pill').forEach(pill => {
+  pill.addEventListener('click', () => setLang(pill.dataset.lang));
+});
 
 document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => setLang(btn.dataset.lang));
